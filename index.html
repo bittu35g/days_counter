@@ -2,35 +2,69 @@
 <html>
 <head>
   <title>Countdown</title>
+  <style>
+    body {
+      font-family: Consolas, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #1ab5a8;
+    }
+
+    #countdown {
+      font-size: 48px;
+      color: #580bafeb;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Countdown to the Occasion</h1>
+  <h1>I'm coming home 💖</h1>
   <p id="countdown"></p>
 
   <script>
     // Set the target date for the occasion
-    const targetDate = new Date('2024-01-21'); // Replace with your desired target date
+    const targetDate = new Date('2023-12-17T00:00:00.000+05:30'); // Replace with your desired target date
 
-    // Function to calculate the remaining days
-    function getRemainingDays() {
-      const today = new Date();
-      const timeDiff = targetDate.getTime() - today.getTime();
-      const remainingDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
-      return remainingDays;
+    // Function to calculate the remaining time
+    function getRemainingTime() {
+    const today = new Date();
+    const timeDiff = targetDate.getTime() - today.getTime();
+    
+    // Calculate remaining days, hours, minutes, and seconds
+    const remainingDays = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    const remainingHours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const remainingMinutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+    const remainingSeconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+    
+    return {
+        today: today,
+        days: remainingDays,
+        hours: remainingHours,
+        minutes: remainingMinutes,
+        seconds: remainingSeconds
+    };
     }
 
     // Function to update the countdown display
     function updateCountdown() {
-      const countdownElement = document.getElementById('countdown');
-      const remainingDays = getRemainingDays();
-      countdownElement.textContent = `${remainingDays} days remaining for the occasion`;
+    const countdownElement = document.getElementById('countdown');
+    const remainingTime = getRemainingTime();
+    
+    // Format the remaining time
+    const formattedTime = `${remainingTime.days} days : ${remainingTime.hours} hours : ${remainingTime.minutes} minutes : ${remainingTime.seconds} seconds`;
+    
+    countdownElement.textContent = formattedTime;
     }
 
     // Initial update on page load
     updateCountdown();
 
-    // Update the countdown daily
-    setInterval(updateCountdown, 24 * 60 * 60 * 1000); // Run the function every 24 hours
+    // Update the countdown every second
+    setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
