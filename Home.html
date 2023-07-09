@@ -24,7 +24,7 @@
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-home-page="index.html" data-home-page-title="Home" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-gradient u-header u-header" id="sec-cf9c"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+  <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-gradient u-header u-header" id="sec-cf9c"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1">
           <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
         </a>
@@ -37,7 +37,7 @@
             </a>
           </div>
           <div class="u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-3-dark-2 u-text-hover-palette-2-base" href="index.html" style="padding: 10px 20px;">Home</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-3-dark-2 u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-3-dark-2 u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-3-dark-2 u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Contact</a>
 </li></ul>
@@ -46,7 +46,7 @@
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html">Home</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
 </li></ul>
@@ -55,7 +55,7 @@
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <a href="index.html" class="u-image u-logo u-image-2" data-image-width="1000" data-image-height="1000">
+        <a href="https://nicepage.com/k/awards-website-templates" class="u-image u-logo u-image-2" data-image-width="1000" data-image-height="1000">
           <img src="images/logo.jpg" class="u-logo-image u-logo-image-2">
         </a>
       </div></header>
@@ -102,7 +102,7 @@
         <div class="u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-group-1">
           <div class="u-container-layout u-container-layout-4">
             <h2 class="u-text u-text-default u-text-1"> I'm coming home 💖</h2>
-            <p class="u-text u-text-2" id="countdown"></p>
+            <p class="u-text u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
       </div>
@@ -123,47 +123,5 @@
         <span>Website Builder Software</span>
       </a>. 
     </section>
-
-    <script>
-        // Set the target date for the occasion
-        const targetDate = new Date('2023-12-17T00:00:00.000+05:30'); // Replace with your desired target date
-    
-        // Function to calculate the remaining time
-        function getRemainingTime() {
-        const today = new Date();
-        const timeDiff = targetDate.getTime() - today.getTime();
-        
-        // Calculate remaining days, hours, minutes, and seconds
-        const remainingDays = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-        const remainingHours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const remainingMinutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-        const remainingSeconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
-        
-        return {
-            today: today,
-            days: remainingDays,
-            hours: remainingHours,
-            minutes: remainingMinutes,
-            seconds: remainingSeconds
-        };
-        }
-    
-        // Function to update the countdown display
-        function updateCountdown() {
-        const countdownElement = document.getElementById('countdown');
-        const remainingTime = getRemainingTime();
-        
-        // Format the remaining time
-        const formattedTime = `${remainingTime.days} days : ${remainingTime.hours} hours : ${remainingTime.minutes} minutes : ${remainingTime.seconds} seconds`;
-        
-        countdownElement.textContent = formattedTime;
-        }
-    
-        // Initial update on page load
-        updateCountdown();
-    
-        // Update the countdown every second
-        setInterval(updateCountdown, 1000);
-      </script>  
   
 </body></html>
