@@ -27,6 +27,7 @@
 
 .u-section-1 .u-image-2 {
   background-image: url("images/img2.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-2 {
@@ -35,6 +36,7 @@
 
 .u-section-1 .u-image-3 {
   background-image: url("images/img31.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-3 {
@@ -43,6 +45,7 @@
 
 .u-section-1 .u-image-4 {
   background-image: url("images/img4.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-4 {
@@ -51,6 +54,7 @@
 
 .u-section-1 .u-image-5 {
   background-image: url("images/img5.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-5 {
@@ -59,6 +63,7 @@
 
 .u-section-1 .u-image-6 {
   background-image: url("images/img6.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-6 {
@@ -206,18 +211,19 @@
 
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 507px;
+    min-height: 926px;
   }
 
   .u-section-1 .u-slider-1 {
-    min-height: 347px;
-    margin-right: initial;
-    margin-left: initial;
-    width: auto;
+    min-height: 548px;
+    width: 307px;
+    margin-top: 17px;
   }
 
   .u-section-1 .u-group-1 {
-    margin-top: 50px;
+    min-height: 418px;
+    margin-top: -57px;
+    margin-bottom: 0;
     width: auto;
     margin-right: initial;
     margin-left: initial;
